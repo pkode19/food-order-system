@@ -1,0 +1,48 @@
+print("========================================")
+print()
+print("              FOOD ORDER")
+print()
+print("========================================")
+print()
+
+customer_name = input("Enter customer name: ")
+food_ordered = input("Enter food ordered: ")
+drink_ordered = input("Enter drink ordered: ")
+portion_size = input("Enter portion size (Small/Medium/Large): ")
+number_of_portions = input("Enter number of portions: ")
+delivery_location = input("Enter delivery location: ")
+phone_number = input("Enter phone number: ")
+
+# Bonus fields
+special_instructions = input("Any special instructions (optional): ")
+delivery_method = input("Delivery method (Pickup/Delivery): ")
+
+print()
+print("========================================")
+print()
+print("              ORDER SUMMARY")
+print()
+print("========================================")
+print()
+print("Customer Name:       " + customer_name)
+print("Food:                " + food_ordered)
+print("Drink:               " + drink_ordered)
+print("Portion Size:        " + portion_size)
+print("Quantity:            " + number_of_portions)
+print("Location:            " + delivery_location)
+print("Phone Number:        " + phone_number)
+print("Delivery Method:     " + delivery_method)
+print("Special Instructions:" + " " + special_instructions)
+print()
+print("========================================")
+print()
+# Confirmation message built with string concatenation
+greeting = "Hello "
+part = ", your order for "
+confirmation = greeting + customer_name + part + number_of_portions + " " + portion_size + " portions of " + food_ordered + " has been received."
+print(confirmation)
+print()
+print("Thank you, " + customer_name + "!")
+print("Your order has been received.")
+print()
+print("========================================")
